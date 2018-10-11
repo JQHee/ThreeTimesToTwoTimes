@@ -77,7 +77,11 @@ class ViewController: UIViewController {
             let sizeChange = CGSize(width: width,height: height)
             let imageDate = img.reSizeImage(reSize: sizeChange)
             let filePath: String = imageNameTwo as String
+            #if swift(>=4.2)
+            let data: NSData = imageDate.pngData()! as NSData
+            #else
             let data: NSData = UIImagePNGRepresentation(imageDate)! as NSData
+            #endif
             twoTimesResult = data.write(toFile: filePath, atomically: true)
 
         }
@@ -85,7 +89,11 @@ class ViewController: UIViewController {
         // 直接输出三倍图
         if !fileManager.fileExists(atPath: imageNameThress) {
             let threefilePath: String = imageNameThress as String
+            #if swift(>=4.2)
+            let threeData: NSData = img.pngData()! as NSData
+            #else
             let threeData: NSData = UIImagePNGRepresentation(img)! as NSData
+            #endif
             threeTimesResult = threeData.write(toFile: threefilePath, atomically: true)
         }
         // 移除没带倍图后缀的图片
@@ -127,8 +135,11 @@ class ViewController: UIViewController {
             labelMessage.text = "图片已存在"
             return
         }
-
+        #if swift(>=4.2)
+        let data: NSData = imageDate!.pngData()! as NSData
+        #else
         let data: NSData = UIImagePNGRepresentation(imageDate!)! as NSData
+        #endif
         let result = data.write(toFile: filePath, atomically: true)
         if result {
             labelMessage.text = "生成成功"

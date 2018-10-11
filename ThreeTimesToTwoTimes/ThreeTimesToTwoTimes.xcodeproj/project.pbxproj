@@ -196,10 +196,12 @@
 					};
 					663C0FE220E6AAF6001C5ECF = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 663C0FCE20E6AAF4001C5ECF;
 					};
 					663C0FED20E6AAF6001C5ECF = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 663C0FCE20E6AAF4001C5ECF;
 					};
 				};
@@ -438,7 +440,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hjq.ThreeTimesToTwoTimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -455,7 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hjq.ThreeTimesToTwoTimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -474,7 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hjq.ThreeTimesToTwoTimesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeTimesToTwoTimes.app/ThreeTimesToTwoTimes";
 			};
@@ -494,7 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hjq.ThreeTimesToTwoTimesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeTimesToTwoTimes.app/ThreeTimesToTwoTimes";
 			};
@@ -513,7 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hjq.ThreeTimesToTwoTimesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ThreeTimesToTwoTimes;
 			};
@@ -532,7 +534,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hjq.ThreeTimesToTwoTimesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ThreeTimesToTwoTimes;
 			};
